@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siddhesh Shende</title>
+    <meta property="og: title" content="Siddhesh Shende" />
+    <meta property="og: site_name" content="Siddhesh Shende" />
+    <meta property="og: url" content="http://127.0.0.1:5500/index.html" />
+    <meta property="og:description" content="Hey my name is Siddhesh Shende. I'm a Web Developer!" />
+    <meta property="og: type" content="website" />
+    <meta property="og:image"
+        content="https://drive.google.com/file/d/1pCQV3uTjzzoNJZt1JlhdbL1ikitloUww/view?usp=sharing" />
+    <meta name="title" content="Siddhesh Shende" />
+    <meta name="description" content="Hey,🤚 my name is Siddhesh Shende. I'm a Web Developer!" />
+    <meta name="keywords"
+        content="siddhesh, Siddhesh, Siddhesh Shende, portfolio website, portfolio, siddhesh portfolio" />
+
+
+    <!-- LinkedIn metadata -->
+    <meta property="og:title" content="Siddhesh Shende" />
+    <meta property="og:description" content="Hey, my name is Siddhesh Shende. I'm a Web Developer!" />
+    <meta property="og:image"
+        content="https://drive.google.com/file/d/1pCQV3uTjzzoNJZt1JlhdbL1ikitloUww/view?usp=sharing" />
+    <meta property="og:url" content="https://www.linkedin.com/in/siddheshshende333" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="icon" type="image/jpeg" href="./assests/android-chrome-192x192.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap.JPG" />
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+
+</head>
+
+<body>
+
+    <nav id="DESKTOP-NAV">
+        <div class="logo"> SIDDHESH SHENDE </div>
+        <div>
+            <ul class="nav-links">
+                <LI><a href="#about"> About</a></LI>
+                <LI><a href="#experience"> Experience</a></LI>
+                <LI><a href="#project"> Project</a></LI>
+                <LI><a href="#contact"> Contact</a></LI>
+            </UL>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo"> SIDDHESH SHENDE </div>
+
+
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="togglemenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="menu-links">
+
+            <LI><a href="#about" onclick="togglemenu()"> About</a></LI>
+            <LI><a href="#experience" onclick="togglemenu()"> Experience</a></LI>
+            <LI><a href="#project" onclick="togglemenu()"> Project</a></LI>
+            <LI><a href="#contact" onclick="togglemenu()"> Contact</a></LI>
+
+            <li id="social-containers">
+                <img src="./assests/linkedin.png" alt="linkedin profile" class="icons"
+                    onclick="location.href='http://www.linkedin.com/in/siddheshshende333'">
+                <img src="./assests/github.png" alt="Github profile" class="icons"
+                    onclick="location.href='https://github.com/siddheshshende'">
+            </li>
+        </div>
+
+    </nav>
+    <section id="profile">
+        <div class="section_pic-container">
+            <img src="./assests/Firefly1og.png" alt="SIDDHESH profile picture" class="about-pic1" />
+        </div>
+        <div class="section_text">
+            <p class="section_text_p1"> Hello, I'm</p>
+            <h1 class="title"> Siddhesh Shende </h1>
+            <p class="section_text_p2"> Frontend Developer </p>
+            <div class="btn_container">
+                <button class="btn btn-color1" onclick="window.open('./assests/siddhesh-resume.pdf')"> Download
+                    CV</button>
+                <button class="btn btn-color2" onclick="location.href='./#contact'"> Contact Details </button>
+            </div>
+            <div id="social-container">
+                <img src="./assests/linkedin.png" alt="linkedin profile" class="icons"
+                    onclick="location.href='http://www.linkedin.com/in/siddheshshende333'">
+                <img src="./assests/github.png" alt="Github profile" class="icons"
+                    onclick="location.href='https://github.com/siddheshshende'">
+            </div>
+        </div>
+
+    </section>
+
+    <section id="about">
+        <p class="section_text_p1">Get To Know More</p>
+        <h1 class="title"> About Me</h1>
+        <div class="section-container">
+            <div class="section_pic-container">
+                <img src="./assests/Fireflyabout-removebg.png" alt="siddhesh about image" class="about-pic">
+            </div>
+            <div class="about-detail-container">
+                <div class="about-container">
+                    <div class="detail-container">
+                        <img src="./assests/experience.png" alt="experience icon" class="icons">
+                        <h3>Experience</h3>
+                        <p>Fresher<br> Frontend Development</p>
+                    </div>
+                    <div class="detail-container">
+                        <img src="./assests/education.png" alt="education icon" class="icons">
+                        <h3>Education</h3>
+                        <p>Pursing MCA<br> BCA Alumnus</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p> Confident and result-driven frontend developer and working as Campus
+                        ambassador.
+                        Additionally, I am contributing to open source projects recently and, also have the honour of
+                        representing the Institute
+                        Innovation Council as a student innovation ambassador.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="./assests/arrow.png" alt="arrow image" class="arrow_icon" onclick="location.href='#experience'">
+    </section>
+
+    <section id="experience">
+        <p class="section_text_p1"> Explore My</p>
+        <h1 class="title"> Experience </h1>
+        <div class="experience-detail-container">
+            <div class="about-containers">
+                <div class="detail-container">
+                    <h2 class="experience-sub-title">Frontend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assests/checkmark.png" alt="checkmark symbol" class="icons">
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Advanced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assests/checkmark.png" alt="checkmark symbol" class="icons">
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Advanced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assests/checkmark.png" alt="checkmark symbol" class="icons">
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assests/checkmark.png" alt="checkmark symbol" class="icons">
+                            <div>
+                                <h3>React.JS</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="detail-container">
+                    <h2 class="experience-sub-title">Backend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assests/checkmark.png" alt="checkmark symbol" class="icons">
+                            <div>
+                                <h3>Php</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="./assests/checkmark.png" alt="checkmark symbol" class="icons">
+                            <div>
+                                <h3>MySQL</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assests/checkmark.png" alt="checkmark symbol" class="icons">
+                            <div>
+                                <h3>Node.JS</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assests/arrow.png" alt="arrow image" class="arrow_icon" onclick="location.href='#project'">
+    </section>
+
+    <section id="project">
+        <p class="section_text_p1"> Browse My Recent </p>
+        <h1 class="title"> Project </h1>
+        <div class="project-detail-container">
+            <div class="project-containers snaps-inline">
+                <div class="card-container">
+                    <div class="p.article-container">
+                        <img src="./assests/netflixlandingpagephotoforproject.JPG" alt="Project 1" class="project-img">
+                    </div>
+                    <h2 class="project-title">Netflix Landing Page Clone</h2>
+                    <h4 class="tech.stack">Tech stack: HTML, CSS, JavaScript</h4>
+
+                    <div class="btn-container">
+                        <button class="btn btn-color2 project-btn"
+                            onclick="window.open('https://github.com/siddheshshende/netflix', '_blank')">
+                            Github
+                        </button>
+                        <button class="btn btn-color2 project-btn"
+                            onclick="window.open('https://siddhesh-netflix-clone.netlify.app/', '_blank')">
+                            Live Demo
+                        </button>
+
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="p.article-container">
+                        <img src="./assests/project-1.png" alt="Project 2" class="project-img">
+                    </div>
+                    <h2 class="project-title"> Loading... </h2>
+                    <h4 class="tech.stack">Loading... </h4>
+                    <div class="btn-container">
+                        <button class="btn btn-color2 project-btn"
+                            onclick="window.open('https://github.com', '_blank')">
+                            Github
+                        </button>
+                        <button class="btn btn-color2 project-btn" onclick="window.open('https://', '_blank')">
+                            Live Demo
+                        </button>
+
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="p.article-container">
+                        <img src="./assests/project-2.png" alt="Project 3" class="project-img">
+                    </div>
+                    <h2 class="experience-sub-title project-title"> Loading... </h2>
+                    <h4 class="tech.stack">Loading... </h4>
+                    <div class="btn-container">
+                        <button class="btn btn-color2 project-btn"
+                            onclick="window.open('https://github.com', '_blank')">
+                            Github
+                        </button>
+                        <button class="btn btn-color2 project-btn" onclick="window.open('https://', '_blank')">
+                            Live Demo
+                        </button>
+
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="p.article-container">
+                        <img src="./assests/project-3.png" alt="Project 4" class="project-img">
+                    </div>
+                    <h2 class="experience-sub-title project-title"> Loading... </h2>
+                    <h4 class="tech.stack">Loading... </h4>
+                    <div class="btn-container">
+                        <button class="btn btn-color2 project-btn"
+                            onclick="window.open('https://github.com', '_blank')">
+                            Github
+                        </button>
+                        <button class="btn btn-color2 project-btn" onclick="window.open('https://', '_blank')">
+                            Live Demo
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assests/arrow.png" alt="arrow image" class="arrow_icon" onclick="location.href='#contact'">
+    </section>
+    <section id="contact">
+        <p class="section_text_p1"> Get In Touch</p>
+        <h1 class="title"> Contact Me </h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assests/email.png" alt="email icon" class="icons contact-icon email-icon">
+                <p><a href="mailto:siddheshshende02@gmail.com">siddheshshende02@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assests/linkedin.png" alt="linkedin icon" class="icons contact-icon">
+                <p> <a href="http://www.linkedin.com/in/siddheshshende333">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-link-conatiner">
+                <ul class="nav-links">
+                    <LI><a href="#about"> About</a></LI>
+                    <LI><a href="#experience"> Experience</a></LI>
+                    <LI><a href="#project"> Project</a></LI>
+                    <LI><a href="#contact"> Contact</a></LI>
+                </UL>
+            </div>
+        </nav>
+        <p>Copyright &copy; 2023 Siddhesh Shende. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
