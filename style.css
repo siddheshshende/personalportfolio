@@ -374,6 +374,7 @@ article .icon {
 #project {
   position: relative;
 }
+
 .project-detail-container {
   display: flex;
   justify-content: center;
@@ -381,30 +382,34 @@ article .icon {
 }
 
 .project-title {
-  font-size: 1.75rem;
+  font-size: 1.5rem; /* Adjust font size as needed */
   color: rgb(0, 0, 0);
   margin: 1rem;
   font-weight: 600;
 }
-/*not necessry as it is written above */
+
 .project-btn {
   color: black;
   border-color: rgb(163, 163, 163);
 }
+
 .tech.stack {
-  font-size: 3rem;
+  font-size: 1.25rem; /* Reduce font size to prevent overflow */
   text-align: center;
-  margin-bottom: 5rem;
+  margin-bottom: 2rem; /* Adjust margin as needed */
 }
+
 .p.article-container {
   text-align: initial;
-  gap: 2.5rem;
+  gap: 1.5rem; /* Adjust gap for spacing */
   justify-content: space-around;
 }
+
 :root {
   --surface-2: white;
-  --spacer: 1.5rem; /* Adjust the value as needed */
+  --spacer: 1rem; /* Adjust the value as needed */
 }
+
 .project-containers {
   display: grid;
   gap: var(--spacer);
@@ -414,31 +419,36 @@ article .icon {
   overflow-x: auto;
   overscroll-behavior-inline: contain;
 }
+
 .snaps-inline {
   scroll-snap-type: inline mandatory;
   scroll-padding-inline: var(--spacer);
 }
+
 .snaps-inline > * {
   scroll-snap-align: start;
 }
+
 .card-container {
   display: grid;
   grid-template-rows: min-content;
   padding: var(--spacer);
   background: var(--surface-2);
   gap: var(--spacer);
-  box-shadow: 10px 10px 5px 1px silver;
+  box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.1); /* Adjust shadow as needed */
 }
-.card-container {
-  text-align: center;
-  border: rgb(53, 53, 53) 0.1rem solid;
-  border-radius: 2rem;
-  border-color: rgb(163, 163, 163);
-}
+
 .project-img {
-  inline-size: 100%;
+  max-width: 100%; /* Consider using max-width instead */
   aspect-ratio: 16/9;
   object-fit: cover; /* can change to contain if u don't want to crop */
+}
+
+/* Remove duplicate definition */
+.card-container {
+  text-align: center;
+  border-radius: 2rem;
+  border-color: rgb(163, 163, 163);
 }
 
 /* contact section */
