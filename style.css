@@ -397,7 +397,7 @@ article .icon {
   border-color: rgb(163, 163, 163);
 }
 
-.tech.stack {
+.tech-stack {
   font-size: 0.9rem; /* Reduce font size */
   height: 3em; /* Set a fixed height */
   overflow: hidden;
@@ -410,7 +410,7 @@ article .icon {
   margin-bottom: 5rem;
 }
 
-.p.article-container {
+.p-article-container {
   flex-grow: 1; /* Allow image container to grow */
 
   text-align: initial;
