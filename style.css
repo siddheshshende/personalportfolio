@@ -385,7 +385,7 @@ article .icon {
   overflow: hidden;
   text-overflow: ellipsis;
   max-width: 100%;
-  
+
   font-size: 1.75rem;
   color: rgb(0, 0, 0);
   margin: 1rem;
@@ -396,16 +396,28 @@ article .icon {
   color: black;
   border-color: rgb(163, 163, 163);
 }
+
 .tech.stack {
-  font-size: 3rem;
+  font-size: 0.9rem; /* Reduce font size */
+  height: 3em; /* Set a fixed height */
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Limit to 2 lines */
+  -webkit-box-orient: vertical;
+
+  /*font-size: 3rem;*/
   text-align: center;
   margin-bottom: 5rem;
 }
+
 .p.article-container {
+  flex-grow: 1; /* Allow image container to grow */
+
   text-align: initial;
   gap: 2.5rem;
   justify-content: space-around;
 }
+
 :root {
   --surface-2: white;
   --spacer: 1.5rem; /* Adjust the value as needed */
@@ -436,6 +448,7 @@ article .icon {
 }
 .card-container {
   text-align: center;
+  height: 100%; /*sets card fix height*/ 
   border: rgb(53, 53, 53) 0.1rem solid;
   border-radius: 2rem;
   border-color: rgb(163, 163, 163);
