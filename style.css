@@ -10,9 +10,11 @@
 body {
   font-family: "Poppins", sans-serif;
 }
+
 html {
   scroll-behavior: smooth;
 }
+
 p {
   color: rgb(85, 85, 85);
 }
@@ -21,19 +23,23 @@ p {
 ::-webkit-scrollbar {
   width: 2em;
 }
+
 ::-webkit-scrollbar-track {
   /* background: hsl(120, 39%, 54% );*/
   margin-block: 0.5rem;
   border-radius: 2rem;
 }
+
 ::-webkit-scrollbar-thumb {
   background: linear-gradient(limegreen, silver, black);
   /* border: 0.25rem solid hsl(120, 39%, 54% );*/
   border-radius: 2rem;
 }
+
 ::-webkit-scrollbar-thumb:hover {
   background: linear-gradient(black, silver, limegreen);
 }
+
 /* for other browsers with scrollbar support */
 @supports (scrollbar-color: linear-gradient(limegreen, gray, black)) {
   * {
@@ -48,9 +54,10 @@ a,
 }
 
 /* nav*/
-#DESKTOP-NAV{
+#DESKTOP-NAV {
   box-shadow: 10px 10px 5px 1px silver;
 }
+
 nav,
 .nav-links {
   display: flex;
@@ -61,31 +68,37 @@ nav {
   align-items: center;
   height: 17vh;
 }
+
 .nav-links {
   gap: 2rem;
   list-style: none;
   font-size: 1.5rem;
 }
+
 a {
   text-decoration: none;
   color: black;
   text-decoration-color: white;
 }
+
 a:hover {
   text-decoration: underline;
   color: gray;
   text-underline-offset: 1rem;
   text-decoration-color: rgb(101, 181, 101);
 }
+
 .logo {
   cursor: default;
   font-size: 2rem;
   color: rgb(101, 181, 101);
 
 }
+
 .logo:hover {
   transform: scale(1.1);
 }
+
 .logo::before {
   content: "< ";
   font-weight: bold;
@@ -100,12 +113,14 @@ a:hover {
 
 #hamburger-nav {
   display: none;
-  
+
 }
+
 .hamburger-menu {
   display: inline-block;
   position: relative;
 }
+
 .hamburger-icon {
   display: flex;
   flex-direction: column;
@@ -114,12 +129,14 @@ a:hover {
   width: 30px;
   cursor: pointer;
 }
+
 .hamburger-icon span {
   width: 100%;
   height: 2px;
   background-color: black;
   transition: all 0.3s ease-in-out;
 }
+
 .menu-links {
   display: block;
   position: absolute;
@@ -131,6 +148,7 @@ a:hover {
   overflow: hidden;
   transition: all 0.3s ease-in-out;
 }
+
 #social-containers {
   display: flex;
   justify-content: center;
@@ -148,12 +166,15 @@ a:hover {
   transition: all 0.3s ease-in-out;
   color: black;
 }
+
 .menu-links li {
   list-style: none;
 }
+
 .menu-links.open {
   max-height: 800px;
 }
+
 .hamburger-icon.open span:first-child {
   transform: rotate(45deg) translate(10px, 5px);
 }
@@ -165,6 +186,7 @@ a:hover {
 .hamburger-icon.open span:last-child {
   transform: rotate(-45deg) translate(10px, -5px);
 }
+
 .hamburger-icon span:first-child {
   transform: none;
 }
@@ -176,6 +198,7 @@ a:hover {
 .hamburger-icon span:first-child {
   transform: none;
 }
+
 /* sections */
 
 section {
@@ -193,6 +216,7 @@ section {
   gap: 5rem;
   height: 80vh;
 }
+
 .section_pic-container {
   height: 400px;
   width: 400px;
@@ -204,6 +228,7 @@ section {
   text-align: center;
   align-self: center;
 }
+
 .section_text p {
   font-weight: 600;
 }
@@ -213,15 +238,18 @@ section {
   font-size: 1.7rem;
   text-align: center;
 }
+
 .title {
   font-size: 3rem;
   text-align: center;
 }
+
 .section_text_p2 {
   margin-bottom: 1rem;
   font-size: 1.7rem;
   text-align: center;
 }
+
 /*#social-container {
   display: flex;
   justify-content: center;
@@ -235,15 +263,18 @@ section {
   height: 2rem;
   margin-top: 20px;
 }
+
 .icons:hover {
   transform: scale(1.2);
 }
+
 /* buttons */
 .btn_container {
   display: flex;
   justify-content: center;
   gap: 1rem;
 }
+
 .btn {
   transition: all 30ms ease;
   padding: 1rem;
@@ -256,21 +287,26 @@ section {
 .btn-color2 {
   border: rgb(53, 53, 53) 0.1rem solid;
 }
+
 .btn-color1:hover,
 .btn-color2:hover {
   cursor: pointer;
 }
+
 .btn-color1,
 .btn-color2:hover {
   background: rgb(53, 53, 53);
   color: white;
 }
+
 .btn-color1:hover {
   background: rgb(0, 0, 0);
 }
+
 .btn-color2 {
   background: none;
 }
+
 .btn-color2:hover {
   background: rgb(0, 0, 0);
 }
@@ -279,27 +315,33 @@ section {
 .section-container {
   display: flex;
 }
+
 #about {
   position: relative;
 }
+
 .about-container {
   gap: 2rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
+
 .about-detail-container {
   justify-content: center;
   flex-direction: column;
 }
+
 .about-container,
 .about-detail-container {
   display: flex;
   justify-content: space-between;
 }
+
 .about-pic,
 .about-pic1 {
   border-radius: 2rem;
 }
+
 .arrow_icon {
   position: absolute;
   right: -5rem;
@@ -309,9 +351,11 @@ section {
   width: 50px;
   border-radius: 5px;
 }
+
 .arrow_icon:hover {
   transform: scale(0.8);
 }
+
 .detail-container {
   padding: 1.5rem;
   background: white;
@@ -319,12 +363,16 @@ section {
   border: rgb(53, 53, 53) 0.1rem solid;
   border-radius: 2rem;
   flex: 1;
-  border-color: rgb(163, 163, 163); /*border color is given two times*/
+  border-color: rgb(163, 163, 163);
+  /*border color is given two times*/
 }
+
 .section-container {
   gap: 4rem;
-  height: 50%; /*80%*/
+  height: 50%;
+  /*80%*/
 }
+
 .section_pic-container {
   height: 400px;
   width: 400px;
@@ -348,6 +396,7 @@ section {
   justify-content: center;
   flex-direction: column;
 }
+
 .article-container {
   display: flex;
   text-align: initial;
@@ -355,12 +404,14 @@ section {
   gap: 2.5rem;
   justify-content: space-around;
 }
+
 .article {
   display: flex;
   width: 10rem;
   justify-content: space-around;
   gap: 0.5rem;
 }
+
 article .icon {
   cursor: default;
 }
@@ -374,6 +425,7 @@ article .icon {
 #project {
   position: relative;
 }
+
 .project-detail-container {
   display: flex;
   justify-content: center;
@@ -384,13 +436,13 @@ article .icon {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  max-width: 100%;
 
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   color: rgb(0, 0, 0);
-  margin: 1rem;
+  margin: 1rem 0;
   font-weight: 600;
 }
+
 /*not necessry as it is written above */
 .project-btn {
   color: black;
@@ -398,46 +450,54 @@ article .icon {
 }
 
 .tech-stack {
-  font-size: 0.9rem; /* Reduce font size */
-  height: 3em; /* Set a fixed height */
+  font-size: 0.9rem;
+  /* Reduce font size */
+  height: 3em;
+  /* Set a fixed height */
   overflow: hidden;
   display: -webkit-box;
-  -webkit-line-clamp: 2; /* Limit to 2 lines */
+  -webkit-line-clamp: 2;
+  /* Limit to 2 lines */
   -webkit-box-orient: vertical;
 
   /*font-size: 3rem;*/
   text-align: center;
-  margin-bottom: 5rem;
+  margin-bottom: 1.5rem;
 }
 
 .p-article-container {
   flex-grow: 1; /* Allow image container to grow */
 
-  text-align: initial;
+/*  text-align: initial;
   gap: 2.5rem;
-  justify-content: space-around;
+  justify-content: space-around;*/
 }
 
 :root {
   --surface-2: white;
-  --spacer: 1.5rem; /* Adjust the value as needed */
+  --spacer: 1rem;
+  /* Adjust the value as needed */
 }
+
 .project-containers {
   display: grid;
   gap: var(--spacer);
   padding: 0 var(--spacer) var(--spacer);
   grid-auto-flow: column;
-  grid-auto-columns: 35%;
+  grid-auto-columns: 35%;/* width for each card*/
   overflow-x: auto;
   overscroll-behavior-inline: contain;
 }
+
 .snaps-inline {
   scroll-snap-type: inline mandatory;
   scroll-padding-inline: var(--spacer);
 }
-.snaps-inline > * {
+
+.snaps-inline>* {
   scroll-snap-align: start;
 }
+
 .card-container {
   display: grid;
   grid-template-rows: min-content;
@@ -446,20 +506,22 @@ article .icon {
   gap: var(--spacer);
   box-shadow: 10px 10px 5px 1px silver;
 }
+
 .card-container {
   text-align: center;
-  height: 100%; /*sets card fix height*/ 
+  height: 450px; /*sets card fix height*/
   border: rgb(53, 53, 53) 0.1rem solid;
   border-radius: 2rem;
   border-color: rgb(163, 163, 163);
 }
+
 .project-img {
   width: 100%;
   height: 200px; /* Set a fixed height */
-
-  inline-size: 100%;
-  aspect-ratio: 16/9;
-  object-fit: cover; /* can change to contain if u don't want to crop */
+  border-radius: 1rem;
+  /*inline-size: 100%;
+  aspect-ratio: 16/9;*/
+  object-fit: cover;  /* can change to contain if u don't want to crop */
 }
 
 /* contact section */
@@ -469,6 +531,7 @@ article .icon {
   justify-content: center;
   height: 70vh;
 }
+
 .contact-info-upper-container {
   display: flex;
   justify-content: center;
@@ -479,6 +542,7 @@ article .icon {
   margin: 2rem auto;
   padding: 0.5rem;
 }
+
 .contact-info-container {
   display: flex;
   align-items: center;
@@ -486,20 +550,25 @@ article .icon {
   gap: 0.5rem;
   margin: 1rem;
 }
+
 .contact-info-container p {
   font-size: larger;
 }
+
 .contact-icon {
   cursor: default;
 }
+
 .email-icon {
   height: 2.5rem;
 }
+
 /* footer section */
 footer {
   height: 26vh;
   margin: 0 1rem;
 }
+
 footer p {
   text-align: center;
 }
