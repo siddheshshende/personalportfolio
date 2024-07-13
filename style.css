@@ -441,8 +441,8 @@ article .icon {
   color: rgb(0, 0, 0);
   margin: 0.5rem 0;  /* Reduced margin */
   font-weight: 600;
-
-  max-height: 3em; /* Limit to 2 lines */
+  line-height: 1.2;
+  max-height: 2.5em; /* Limit to 2 lines */
    display: -webkit-box;
    -webkit-line-clamp: 2;
    -webkit-box-orient: vertical;
@@ -489,7 +489,7 @@ article .icon {
   gap: var(--spacer);
   padding: 0 var(--spacer) var(--spacer);
   grid-auto-flow: column;
-  grid-auto-columns:  minmax(250px, 35%); /* Adjusted width for each card for better responsiveness*/
+  grid-auto-columns:  minmax(290px, 35%); /* Adjusted width for each card for better responsiveness*/
   overflow-x: auto;
   overscroll-behavior-inline: contain;
 }
@@ -517,8 +517,9 @@ article .icon {
 
 .card-container {
   text-align: center;
+  justify-content: space-between;
   min-height: 400px; /* Set a minimum height */
-  max-height: 450px; 
+  max-height: 490px; 
   height: auto; /*changed from fixed height to auto*/
   border: rgb(53, 53, 53) 0.1rem solid;
   border-radius: 2rem;
