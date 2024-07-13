@@ -224,6 +224,29 @@
     display: none;
   }
 }
+/*added afterwards for project section */
+@media screen and (max-width: 480px) {
+  .project-containers {
+     grid-auto-columns: 85%; /* Wider cards on very small screens */
+  }
+
+  .project-title {
+     font-size: 1.1rem; /* Further reduce font size on small screens */
+  }
+
+  .tech-stack {
+     font-size: 0.8rem; /* Smaller font for tech stack on small screens */
+  }
+
+  .btn-container {
+     flex-direction: column; /* Stack buttons vertically on small screens */
+     align-items: center;
+  }
+
+  .project-btn {
+     margin-bottom: 0.5rem; /* Add some space between stacked buttons */
+  }
+}
 
 @media screen and (max-width: 940px) {
   .arrow_icon {

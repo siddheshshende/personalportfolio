@@ -433,14 +433,19 @@ article .icon {
 }
 
 .project-title {
-  white-space: nowrap;
+  white-space: normal; /* Changed from nowrap to allow wrapping to make it visible */
   overflow: hidden;
   text-overflow: ellipsis;
 
-  font-size: 1.5rem;
+  font-size: 1.25rem;  /* Reduced font size slightly */
   color: rgb(0, 0, 0);
-  margin: 1rem 0;
+  margin: 0.5rem 0;  /* Reduced margin */
   font-weight: 600;
+
+  max-height: 3em; /* Limit to 2 lines */
+   display: -webkit-box;
+   -webkit-line-clamp: 2;
+   -webkit-box-orient: vertical;
 }
 
 /*not necessry as it is written above */
@@ -484,7 +489,7 @@ article .icon {
   gap: var(--spacer);
   padding: 0 var(--spacer) var(--spacer);
   grid-auto-flow: column;
-  grid-auto-columns: 35%;/* width for each card*/
+  grid-auto-columns:  minmax(250px, 35%); /* Adjusted width for each card for better responsiveness*/
   overflow-x: auto;
   overscroll-behavior-inline: contain;
 }
@@ -499,8 +504,11 @@ article .icon {
 }
 
 .card-container {
-  display: grid;
-  grid-template-rows: min-content;
+  display: flex; /* Changed from grid to flex */
+  flex-direction: column;
+ /* display: grid;
+  grid-template-rows: min-content;*/
+
   padding: var(--spacer);
   background: var(--surface-2);
   gap: var(--spacer);
@@ -509,7 +517,9 @@ article .icon {
 
 .card-container {
   text-align: center;
-  height: 450px; /*sets card fix height*/
+  min-height: 400px; /* Set a minimum height */
+  max-height: 450px; 
+  height: auto; /*changed from fixed height to auto*/
   border: rgb(53, 53, 53) 0.1rem solid;
   border-radius: 2rem;
   border-color: rgb(163, 163, 163);
