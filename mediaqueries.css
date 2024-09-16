@@ -224,6 +224,59 @@
     display: none;
   }
 }
+/*added afterwards for project section */
+@media screen and (max-width: 480px) {
+  .project-containers {
+     grid-auto-columns: 90%; /* Wider cards on very small screens */
+  }
+
+  .project-title {
+     font-size: 1rem; /* Smaller font size for very small screens */
+     max-height: 3em; /* Allow for 3 lines on very small screens */
+     -webkit-line-clamp: 3;
+  }
+
+  .tech-stack {
+     font-size: 0.8rem; /* Smaller font for tech stack on small screens */
+  }
+
+  .btn-container {
+     flex-direction: row; /* Keep buttons side by side */
+     justify-content: center;
+     gap: 0.5rem; /* Add some space between buttons */
+  }
+
+  .project-btn {
+     padding: 0.3rem 0.6rem; /* Smaller padding for buttons on small screens */
+     font-size: 0.9rem; /* Smaller font size for buttons */
+  }
+}
+
+
+/*for very small screen for project section only*/
+@media screen and (max-width: 350px) {
+  .project-containers {
+     grid-auto-columns: 95%; /* Even wider cards on extremely small screens */
+  }
+
+  .project-title {
+     font-size: 0.9rem; /* Further reduce font size */
+  }
+
+  .tech-stack {
+     font-size: 0.7rem; /* Further reduce tech stack font size */
+  }
+
+  .btn-container {
+     flex-wrap: wrap; /* Allow buttons to wrap if needed */
+  }
+
+  .project-btn {
+     padding: 0.2rem 0.4rem; /* Even smaller padding for buttons */
+     font-size: 0.8rem; /* Even smaller font size for buttons */
+     margin-bottom: 0.3rem; /* Add some vertical space if buttons wrap */
+  }
+}
 
 @media screen and (max-width: 940px) {
   .arrow_icon {
