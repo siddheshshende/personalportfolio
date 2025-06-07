@@ -250,6 +250,18 @@
      padding: 0.3rem 0.6rem; /* Smaller padding for buttons on small screens */
      font-size: 0.9rem; /* Smaller font size for buttons */
   }
+    .contact-info-container {
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+
+  .contact-info-container p {
+    font-size: 1rem;
+  }
+
+  .contact-icon {
+    height: 1.8rem;
+  }
 }
 
 
