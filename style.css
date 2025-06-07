@@ -535,23 +535,28 @@ article .icon {
   object-fit: cover;  /* can change to contain if u don't want to crop */
 }
 
-/* contact section */
+/* Contact Section */
 #contact {
   display: flex;
   flex-direction: column;
   justify-content: center;
   height: 70vh;
+  padding: 0 1rem;
 }
 
 .contact-info-upper-container {
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* makes it responsive */
   border: rgb(53, 53, 53) 0.1rem solid;
   border-radius: 2rem;
   border-color: rgb(163, 163, 163);
   background: rgb(250, 250, 250);
   margin: 2rem auto;
-  padding: 0.5rem;
+  padding: 1rem;
+  max-width: 600px;
+  gap: 1rem;
 }
 
 .contact-info-container {
@@ -559,19 +564,23 @@ article .icon {
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  margin: 1rem;
+  margin: 0.5rem;
+  flex: 1 1 250px;
 }
 
 .contact-info-container p {
-  font-size: larger;
+  font-size: 1.1rem;
+  word-break: break-word;
+  text-align: center;
 }
 
 .contact-icon {
-  cursor: default;
+  height: 2rem;
+  width: auto;
 }
 
 .email-icon {
-  height: 2.5rem;
+  height: 2.2rem;
 }
 
 /* footer section */
